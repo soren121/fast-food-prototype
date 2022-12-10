@@ -1,0 +1,21 @@
+# This config file ensures consistency between editors
+# http://editorconfig.org/
+
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+indent_size = 4
+indent_style = space
+
+[{Makefile, *.sh}]
+indent_style = tab
+end_of_line = lf
+
+[{*.yml,*.yaml,*.config}]
+indent_size = 2
+
+[version.txt]
+insert_final_newline = false
