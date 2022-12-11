@@ -1,0 +1,63 @@
+@import '../../layout/_vars';
+
+.orderCard {
+    min-height: 350px;
+
+    @include media-breakpoint-down(sm) {
+        min-height: 0;
+    }
+}
+
+.sectionTitle {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0;
+    padding: 1rem 1.25rem;
+}
+
+.orderItems {
+    flex: 1 1 auto;
+    max-height: max(600px, 65vh);
+    overflow-y: auto;
+
+    .orderItem {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .orderItemPrice {
+        text-align: right;
+        font-weight: 600;
+    }
+
+    .orderItemRemoveBtn {
+        background: none;
+        border: 0;
+        padding: 0 5px;
+        margin-right: 5px;
+        margin-left: -5px;
+
+        svg {
+            width: 20px;
+            height: 20px;
+            fill: theme-color('primary');
+            vertical-align: -15%;
+        }
+
+        &:disabled svg {
+            fill: #999;
+        }
+    }
+
+    .orderTotal {
+        font-weight: 600;
+        position: sticky;
+        bottom: 0;
+        border-top: 2px solid #ccc;
+    }
+}
+
+.submitOrderBtn {
+    margin: 0.5rem;
+    width: auto;
+}

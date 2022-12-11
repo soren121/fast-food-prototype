@@ -1,0 +1,46 @@
+@import '../../layout/_vars';
+
+.itemsLoading {
+    p {
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 1rem;
+        font-weight: bold;
+        color: theme-color('primary');
+    }
+}
+
+.items {
+    margin: 1rem 0 2rem;
+    
+    h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+        font-weight: 700;
+    }
+
+    @include media-breakpoint-down(sm) {
+        margin-top: 0;
+    }
+}
+
+.itemGrid {
+    margin: 0 -0.5rem;
+}
+
+.itemCard {
+    margin: 0 0.5rem 1rem;
+
+    .itemCardTitle {
+        font-weight: 600;
+    }
+    
+    .itemOptionLabel {
+        font-size: 0.9rem;
+        margin-bottom: 0.4rem;
+    }
+}
+
+.itemCardAddBtn {
+    margin-top: 1rem;
+}
